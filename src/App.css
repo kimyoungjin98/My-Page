@@ -7,6 +7,7 @@ body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
 
+/* 백그라운드 배경 설정 */
 .root::after {
   background-image: url("./img/giphy.gif");
   background-size: cover;
