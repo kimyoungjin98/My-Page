@@ -2,7 +2,7 @@
   "name": "mypage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://kimyoungjin98.github.io/Toy_Project",
+  "homepage": "https://github.com/kimyoungjin98/My-Page",
   "dependencies": {
     "@mui/material": "^5.2.3",
     "@testing-library/jest-dom": "^5.11.4",

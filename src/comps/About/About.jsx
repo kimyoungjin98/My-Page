@@ -5,10 +5,10 @@ import AboutContent from "./AboutContent";
 
 const About = () => {
   return (
-    <section className="about_div" id="about">
+    <div className="about_div" id="about">
       <img src={me} className="me" />
       <AboutContent />
-    </section>
+    </div>
   );
 };
 

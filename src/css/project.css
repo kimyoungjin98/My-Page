@@ -1,15 +1,21 @@
-.pro_div {
+.project_div {
+  opacity: 0;
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: center;
-  padding: 10vh;
+  padding: 55vh;
   height: 100vh;
   width: 100%;
   position: relative;
   text-align: left;
   font-family: "NEXON Lv1 Gothic OTF Light";
   font-size: 20px;
+}
+
+.fade {
+  transition: 0.8s ease;
+  opacity: 1;
 }
 
 .icon_left,

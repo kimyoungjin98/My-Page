@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Loader from "react-loader-spinner";
 import { useAppContext } from "../context/AppContextProvider";
 import "../css/nav.css";
 

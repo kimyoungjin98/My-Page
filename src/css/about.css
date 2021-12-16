@@ -1,13 +1,19 @@
 .about_div {
+  opacity: 0;
   display: flex;
   align-content: center;
   justify-content: center;
   align-items: center;
   padding: 55vh;
-  height: 70vh;
+  height: 100vh;
   width: 100%;
   text-align: center;
   position: relative;
+}
+
+.fade {
+  transition: 0.8s ease;
+  opacity: 1;
 }
 
 .about_1,

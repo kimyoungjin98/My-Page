@@ -12,6 +12,7 @@ const AppContextProvider = ({ children }) => {
     if (!isScroll) {
       isScroll = true;
       requestAnimationFrame(() => {
+        // 내비 아래에 닿는 div 찾아서 return하기
         const nav = document.querySelector("nav");
         const navBottom = nav.getBoundingClientRect().bottom;
         const comp = document.elementFromPoint(0, navBottom);
@@ -20,6 +21,11 @@ const AppContextProvider = ({ children }) => {
           return compName == comp.id;
         });
 
+        // 컴포넌트의 컨텐츠들이 처음 화면에 나타날 때 트랜지션을 주기 위한 코드
+        const comp_div = document.querySelector("." + compName + "_div");
+        comp_div.classList.add("fade");
+
+        // 스크롤을 내릴 때 내비에 효과를 주기 위한 코드
         nav_style(compName);
         isScroll = false;
       });
